@@ -1,0 +1,66 @@
+[{
+    "layer": "top",
+    "position": "top",
+    "spacing": 4,
+    "output": "DSI-1",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock", "cpu", "memory"],
+    "modules-right": ["pulseaudio", "network#2", "tray"],
+
+
+    // Module configurations
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace m-1 > /dev/null",
+        "on-scroll-down": "hyprctl dispatch workspace m+1 > /dev/null"
+    },
+
+    "hyprland/window": {
+        "max-length": 50
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 4
+    },
+
+    "clock": {
+        "format": "{:%a %b %d, %H:%M:%S}",
+        "interval": 1,
+        "min-length": 21
+    },
+
+    "network#1": {
+        "format": "{ifname} {ipaddr}/{cidr}",
+        "min-length": 20
+    },
+
+    "network#2": {
+        "format": "\uf077  {bandwidthUpBits} \uf078  {bandwidthDownBits}",
+        "interval": 1,
+        "min-length": 22
+    },
+
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "{icon} \uf293  {volume}%",
+        "format-icons": {
+            "default": [ "\uf026", "\uf027", "\uf028" ]
+        },
+        "scroll-step": 0.5,
+        "on-click": "pavucontrol",
+        "min-length": 8
+    },
+
+    "cpu": {
+        "format": "\uf2db  {usage}%",
+        "interval": 1,
+        "min-length": 9
+    },
+
+    "memory": {
+        "format": "\uf538  {percentage}%",
+        "interval": 10,
+        "min-length": 9
+    }
+}]

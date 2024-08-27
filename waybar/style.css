@@ -1,0 +1,68 @@
+* {
+    font-family: Koruri Regular, Font Awesome;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0px 3px;
+
+    transition: none;
+    box-shadow: none;
+    
+}
+
+window#waybar {
+    background-color: rgba(255,255,255,0);
+}
+
+.modules-left {
+    background-color: whitesmoke;
+    border-radius: 4px;
+    margin: 4px;
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.modules-center {
+    background-color: whitesmoke;
+    border-radius: 4px;
+    margin: 4px;
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.modules-right {
+    background-color: whitesmoke;
+    border-radius: 4px;
+    margin: 4px;
+    margin-bottom: 0; /* Remove bottom margin */
+
+}
+
+#workspaces * {
+    padding: 0;
+}
+
+#workspaces button {
+    margin: 4px 2px;
+    border-radius: 4px;
+    padding: 0 4px;
+    transition: all 0.2s ease-in-out;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modules-right > * {
+    transition: all 0.2s ease-in-out;
+}
+
+#pulseaudio, #network, #tray, #cpu, #memory, #clock, #bluetooth, #user, #disk{
+    margin: 4px 2px;
+    border-radius: 4px;
+    padding: 0 4px;
+    transition: all 0.2s ease-in-out;
+    background: rgba(0, 0, 0, 0.1);
+}

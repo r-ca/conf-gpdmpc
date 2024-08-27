@@ -1,0 +1,9 @@
+keypress_delay_ms: 20
+
+modmap:
+  - name: Global
+    remap:
+      CAPSLOCK: Rightmeta
+      Alt_L: Ctrl_L
+      LeftMeta: Alt_L
+
